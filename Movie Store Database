@@ -1,0 +1,44 @@
+---Create a store database of your choice. You must have at lease 15 items and 5 data type columns.
+
+--CREATE TABLE movies(ID INTEGER PRIMARY KEY, name TEXT, genre TEXT, releaseyear INTEGER, price INTEGER);
+
+INSERT INTO movies VALUES(1, 'titanic', 'drama', 1997, 9.95);
+INSERT INTO movies VALUES(2, 'selena', 'drama', 1997, 9.95);
+INSERT INTO movies VALUES(3, 'the little mermaid', 'fantasy', 1989, 5.95);
+INSERT INTO movies VALUES(4, 'the lion king', 'family', 1994, 9.95);
+INSERT INTO movies VALUES(5, 'aladin', 'family', 1992, 9.95);
+INSERT INTO movies VALUES(6, 'beauty and the beast', 'fantasy', 1991, 9.95);
+INSERT INTO movies VALUES(7, 'mean girls', 'comedy', 2004, 12.95);
+INSERT INTO movies VALUES(8, 'iron man', 'action', 2008, 12.95);
+INSERT INTO movies VALUES(9, 'captain america: the winter soldier', 'action', 2014, 15.95);
+INSERT INTO movies VALUES(10, 'avengers', 'action', 2012, 15.95);
+INSERT INTO movies VALUES(11, 'it takes two', 'family', 1995, 9.95);
+INSERT INTO movies VALUES(12, 'miss congeniality', 'comedy', 2000, 12.95);
+INSERT INTO movies VALUES(13, 'deadpool', 'action', 2016,15.95);
+INSERT INTO movies VALUES(14, 'cheaper by the dozen', 'family', 2003, 12.95);
+INSERT INTO movies VALUES(15, 'avengers: endgame', 'action', 2019, 15.95);
+INSERT INTO movies VALUES(16, 'black panther', 'action', 2018, 15.95);
+INSERT INTO movies VALUES(17, 'halloween', 'horror', 1978, 5.95);
+INSERT INTO movies VALUES(18, 'halloween H20: 20 years later', 'horror', 1998, 9.95);
+INSERT INTO movies VALUES(19, 'halloween kills', 'horror', 2021, 19.95);
+INSERT INTO movies VALUES(20, 'friday the 13th', 'horror', 1980, 5.95);
+
+--Display movie store database by price.
+SELECT * FROM movies
+ORDER BY price;
+
+--Display movie store database where the release year is less than 2000.
+SELECT * FROM movies
+WHERE releaseyear < 2000;
+
+--In this example the names of the movies are being displayed where the release year is between the year 2000 and 2018.
+SELECT name FROM movies
+WHERE releaseyear BETWEEN 2000 AND 2018;
+
+--In this example, displayed are the movie names that have a price of $12.95 and higher.
+SELECT name FROM movies
+WHERE price >= 12.95;
+
+--In this example, all of the movies in the database are being displayed by genre.
+SELECT * FROM movies
+ORDER BY genre;
