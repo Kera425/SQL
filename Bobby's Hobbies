@@ -1,8 +1,8 @@
 /* 
-We've created a database of people and hobbies, and each row in hobbies is related to a row in persons via the person_id column. In the first example, 
-we used a JOIN to combine the Persons table and Hobbies tables with matching Id and person_id columns. */
+I created a database of people and hobbies, and each row in hobbies is related to a row in persons via the person_id column. In the first example, 
+I used a JOIN to combine the Persons table and Hobbies tables with matching Id and person_id columns. */
 
---In the second example, we added an addtional query that ONLY shows the name and hobbies of Bobby McBobbyFace using JOIN combined with WHERE.
+--In the second example, I added an addtional query that ONLY shows the name and hobbies of Bobby McBobbyFace using JOIN combined with WHERE.
 
 
 
